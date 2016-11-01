@@ -63,24 +63,32 @@ public class Tree {
 	
 	// faltando implementar a busca
 	
-	// faltando implementar percorrerInOrdem();
+	// Em ordem
+	
+	public void inOrder(No no){
+		if(no != null){
+			inOrder(no.leftTree);
+			System.out.println(no.root + " ");
+			inOrder(no.rightTree);
+		}
+	}
 	
 	//Pré ordem
 	
-	public void preorder(No no){
+	public void preOrder(No no){
 		if(no != null){
 			System.out.print(no.root + " ");
-			preorder(no.leftTree);
-			preorder(no.rightTree);
+			preOrder(no.leftTree);
+			preOrder(no.rightTree);
 		}
 	}
 	
 	//Pós ordem
 	
-	public void posorder(No no){
+	public void posOrder(No no){
 		if(no != null){
-			posorder(no.leftTree);
-			posorder(no.rightTree);
+			posOrder(no.leftTree);
+			posOrder(no.rightTree);
 		System.out.println(no.root + "");
 		}
 	}
