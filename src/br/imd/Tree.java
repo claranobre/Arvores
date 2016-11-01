@@ -65,8 +65,23 @@ public class Tree {
 	
 	// faltando implementar percorrerInOrdem();
 	
-	// faltando implementar percorrerPreOrdem();
+	//Pré ordem
 	
-	// faltando implementar percorrerPosOrdem();
-
+	public void preorder(No no){
+		if(no != null){
+			System.out.print(no.root + " ");
+			preorder(no.leftTree);
+			preorder(no.rightTree);
+		}
+	}
+	
+	//Pós ordem
+	
+	public void posorder(No no){
+		if(no != null){
+			posorder(no.leftTree);
+			posorder(no.rightTree);
+		System.out.println(no.root + "");
+		}
+	}
 }
