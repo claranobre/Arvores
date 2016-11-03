@@ -1,15 +1,28 @@
 package br.imd;
 
-public class Tree {
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import javax.swing.JPanel;
+
+public class Tree extends JPanel{
 	
 	private No root;
 	private Tree leftTree;
 	private Tree rightTree;
 	
 	public Tree(){
-		// construtor vazio
-	}
+		root = null;
+	}	
+    public Tree(No root){
+        this.root = root;
+    }
 	
+    public void setRoot(No root){
+        this.root = root;
+    }
+    public No getRoot(){
+        return root;
+    }
 	public Tree getRightTree(){
 		return rightTree;
 	}
@@ -26,13 +39,9 @@ public class Tree {
 		this.leftTree = leftTree;
 	}
 	
-	 public No getRoot() {
-	        return root;
-	 }
-
-	public void setRoot(No root) {
-	        this.root = root;
-	}
+    public void paint(Graphics g){
+        Graphics2D g2d = (Graphics2D) g;
+    }  
 	
 	public void insereAluno(int matricula, String nome) {
         Aluno aluno = new Aluno(matricula, nome);

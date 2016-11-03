@@ -66,3 +66,19 @@ public class Menu {
 		      }
 	   }
 }
+
+public class Teste {
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        JFrame f = new JFrame();
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f.setVisible(true);
+        f.setTitle("Teste");
+        f.setSize(800, 600);
+        f.setLocationRelativeTo(null);
+        No n = new No(12);
+        f.add(n);
+    }
+}
