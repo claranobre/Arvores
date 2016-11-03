@@ -1,4 +1,5 @@
-import java.awt.*;
+package br.imd;
+
 import java.awt.geom.*;
 
 /**
