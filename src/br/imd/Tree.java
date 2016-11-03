@@ -1,7 +1,5 @@
 package br.imd;
 
-import javax.xml.soap.Node;
-
 public class Tree {
 	
 	private No root;
@@ -66,17 +64,17 @@ public class Tree {
 	// Busca
 	
 	public No search(int key){
-		  No currentNode = this.root;
+		  No no = this.root;
 		  
-		  while(currentNode != null){
-		   if(key == currentNode.key)
-		    return currentNode;
-		   else if(key < currentNode.key)
-		    currentNode = currentNode.leftTree;
+		  while(no != null){
+		   if(key == no.key)
+		    return no;
+		   else if(key < no.key)
+		    no = no.leftTree;
 		   else
-		    currentNode = currentNode.rightTree;
+		    no = no.rightTree;
 		  }
-		  return currentNode;
+		  return no;
 		 }
 
 
