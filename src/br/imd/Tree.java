@@ -1,5 +1,7 @@
 package br.imd;
 
+import javax.xml.soap.Node;
+
 public class Tree {
 	
 	private No root;
@@ -61,8 +63,23 @@ public class Tree {
 		
 	}
 	
-	// faltando implementar a busca
+	// Busca
 	
+	public No search(int key){
+		  No currentNode = this.root;
+		  
+		  while(currentNode != null){
+		   if(key == currentNode.key)
+		    return currentNode;
+		   else if(key < currentNode.key)
+		    currentNode = currentNode.leftTree;
+		   else
+		    currentNode = currentNode.rightTree;
+		  }
+		  return currentNode;
+		 }
+
+
 	// Em ordem
 	
 	public void inOrder(No no){
