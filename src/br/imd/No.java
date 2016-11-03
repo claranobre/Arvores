@@ -34,7 +34,6 @@ public class No extends JPanel {
     public Aluno getAluno() {
         return aluno;
     }
-
     public void setAluno(Aluno aluno) {
         this.aluno = aluno;
     }

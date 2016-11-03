@@ -69,7 +69,7 @@ public class Tree extends JPanel{
 		}
 		
 	}
-	
+/**	
 	// Busca
 	
 	public No search(int key){
@@ -116,4 +116,5 @@ public class Tree extends JPanel{
 		System.out.println(no.root + "");
 		}
 	}
+**/	
 }
