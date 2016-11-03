@@ -56,10 +56,13 @@ public class Menu {
 		         setSize(300, 300);
 		      }
 
-		      public void paint (Graphics g) {
-		         Graphics2D g2;
-		         g2 = (Graphics2D) g;
-		         g2.drawString ("It is a custom canvas area", 70, 70);
+		      public void paint (Graphics graphics) {
+		    	  graphics.setColor(new Color(0,0,255));
+		    	  graphics.drawOval(50, 50, 100, 100);
+		         
+		    	 Graphics2D g2;
+		         g2 = (Graphics2D) graphics;
+		         g2.drawString ("01", 70, 70);
 		      }
 	   }
 }
