@@ -69,8 +69,9 @@ public class Tree extends JPanel{
 		}
 		
 	}
-/**	
-	// Busca
+	/*
+	 *  Busca
+	 */
 	
 	public No search(int key){
 		  No no = this.root;
@@ -87,7 +88,9 @@ public class Tree extends JPanel{
 		 }
 
 
-	// Em ordem
+	/*
+	 *  Em ordem
+	 */
 	
 	public void inOrder(No no){
 		if(no != null){
@@ -97,7 +100,9 @@ public class Tree extends JPanel{
 		}
 	}
 	
-	//Pré ordem
+	/*
+	 * Pré ordem
+	 */
 	
 	public void preOrder(No no){
 		if(no != null){
@@ -107,7 +112,9 @@ public class Tree extends JPanel{
 		}
 	}
 	
-	//Pós ordem
+	/**
+	 * Pós ordem
+	 */
 	
 	public void posOrder(No no){
 		if(no != null){
@@ -116,5 +123,4 @@ public class Tree extends JPanel{
 		System.out.println(no.root + "");
 		}
 	}
-**/	
 }
